@@ -1,0 +1,228 @@
+* {
+    padding: 0;
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F3F5FC;
+    font-family: Arial, sans-serif;
+}
+
+
+
+
+/* ---------------------------------- */
+/* ESTILO PARA CELULAR */
+@media all and (min-width: 320px) {
+    .contenedorTodo {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 1em;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .title {
+        font-size: 2em;
+        margin-bottom: 1em;
+        color: #d999b9;
+    }
+
+    .letraA {
+        font-size: 3em;
+        font-weight: bold;
+        color: #3F3D56;
+    }
+
+    .ContenidoPrincipal {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .ContEncriptar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 1em 0em 1em 0em;
+    }
+
+    .ContEncriptar textarea {
+        resize: none;
+        width: 100%;
+        height: 15rem;
+        padding: 0.5em;
+        border-radius: 8px;
+        font-size: 2em;
+        margin-bottom: 0.5em;
+        color: #d43283 !important; 
+        font-family: Arial, sans-serif; 
+        background-color: #F3F5FC; 
+        outline: none; 
+    }
+
+    .contenedorBotones{
+        width: 100%;
+    }
+
+    .ContEncriptar small {
+        font-size: 0.75em;
+        color: #59595a;
+        margin-bottom: 1em;
+        text-align: left;
+        width: 100%;
+    }
+
+    .ContEncriptar button {
+        width: 100%;
+        padding: 1.2em;
+        margin: 0.5em 0em;
+        border-radius: 1em;
+        font-size: 1em;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .btn-encriptar {
+        background-color: #e22885;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+
+    .btn-encriptar:hover {
+        background-color: #da1577;
+    }
+
+    .btn-desencriptar {
+        cursor: pointer;
+        color: #e22885;
+        border: 2px solid #e22885;
+    }
+
+    .btn-desencriptar:hover {
+        background-color: #ffffff;
+    }
+
+    .ShowText {
+        background-color: white;
+        
+        border-radius: 1em;
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+        text-align: center;
+        color: #343A40;
+        padding: 2em;
+        margin: 2em 0em 0em 0em;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    #contMsjNoText{
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+
+    }
+    .ShowText small {
+        margin: 0;
+        font-size: larger;
+    }
+
+
+    #mostrarTexto {
+        width: 100%;
+        padding: 1em;
+        font-family: Arial, sans-serif;
+        font-size: 1.5em;
+        color: #59595a;
+        line-height: 1.5em;
+        box-sizing: border-box;
+        overflow: hidden;  
+        resize: none;      
+        min-height: 50px;  
+        max-width: 100%;   
+    }
+    
+    
+    
+    #mostrarTexto:focus {
+        outline: none;
+    }
+}
+
+
+
+
+/* ---------------------------------- */
+/* ESTILO PARA TABLET */
+@media (min-width: 770px) {
+
+    
+    .contenedorTodo {
+        width: auto;
+    }
+    
+    .contenedorBotones{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin: 1em 0em;
+        gap: 2em;
+    }
+
+    .ContEncriptar textarea {
+        height: 20rem;
+
+    }
+
+    .ShowText{
+        padding: 3em;
+    }
+}
+
+
+
+
+/* ---------------------------------- */
+/* ESTILO PARA COMPUTADORA */
+@media (min-width: 1024px) {
+    .display-none-important {
+        display: none !important;
+    }
+    
+    .ContNoText{
+        display: flex ;
+    }
+
+    .contenedorTodo {
+        max-width: 100%;
+        display: flex;
+        flex-direction: row !important;
+        height: 100vh;
+    }
+
+    .ContenidoPrincipal{
+        flex-direction: row !important;
+        gap: 2em;
+        justify-content: space-around;
+        width: 100%;
+
+    }
+
+    .ContEncriptar{
+        width: 50%;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .ShowText{
+        width: 30%;
+        padding: 1em !important;
+    }
+}

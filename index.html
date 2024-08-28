@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <meta name="description" content="">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>Encriptador</title>
+
+</head>
+
+<body>
+    <div class="contenedorTodo">
+        <header class="title">
+            <figure class="contendedor_Logo">
+                <img src="imagenes/Logo.png" alt="" >
+            </figure>
+        </header>
+
+        
+            <!-- <p><a href="chatgpt/index.html">chatgpt</a></p> -->
+            <main class="ContenidoPrincipal">
+
+                <section class="ContEncriptar">
+                    <textarea id="inputTexto" placeholder="Ingrese el texto aquí"></textarea>
+
+                    <small>Solo letras minúsculas y sin acentos</small>
+
+                    <div class="contenedorBotones">
+                        <button id="btnEncriptar" class="btn-encriptar" type="button" >Encriptar</button>
+                        <button id="btnDesencriptar" class="btn-desencriptar" type="button">Desencriptar</button>
+                    </div>
+                </section>
+
+                <section class="ShowText">
+                    <figure  id="ContNoText" class="ContNoText" >
+                        <img src="imagenes/Muñeco.png" alt="" srcset="">
+                    </figure>
+                    <div  id="contMsjNoText">
+                        <h2>Ningún mensaje fue encontrado</h2>
+                        <small>Ingresa el texto que desees encriptar o desencriptar.</small>
+                    </div>
+                    <textarea style="display: none;"id="mostrarTexto" rows="5" cols="30" oninput="autoResize(this)"></textarea>
+
+                </section>
+            </main>
+
+
+    </div>
+</body>
+
+<script src="js/encriptador.js"></script>
+</html>
